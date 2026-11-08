@@ -101,8 +101,9 @@ public class MaxHeap<T extends Comparable<T>> {
             }
         }
         tamaño++;
+        HandleImpl h = nuevo.handle;
         subir(nuevo);
-        return nuevo.handle;
+        return h;
     }
 
     public Handle<T> maximo() {
